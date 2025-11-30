@@ -89,16 +89,16 @@ class MainWindow(QMainWindow):
 
         # SET CUSTOM THEME
         # ///////////////////////////////////////////////////////////////
-        useCustomTheme = False
-        themeFile = "themes\py_dracula_light.qss"
+        # useCustomTheme = False
+        # themeFile = "themes\py_dracula_light.qss"
 
-        # SET THEME AND HACKS
-        if useCustomTheme:
-            # LOAD AND APPLY STYLE
-            UIFunctions.theme(self, themeFile, True)
+        # # SET THEME AND HACKS
+        # if useCustomTheme:
+        #     # LOAD AND APPLY STYLE
+        #     UIFunctions.theme(self, themeFile, True)
 
-            # SET HACKS
-            AppFunctions.setThemeHack(self)
+        #     # SET HACKS
+        #     AppFunctions.setThemeHack(self)
 
         # SET HOME PAGE AND SELECT MENU
         # ///////////////////////////////////////////////////////////////
@@ -161,4 +161,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("icon.ico"))
     window = MainWindow()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
